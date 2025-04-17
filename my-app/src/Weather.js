@@ -3,16 +3,20 @@ import axios from "axios";
 import "./Weather.css";
 
 export default function Weather(){
-    const [ready, setReady]=useState(false);
-    const [temperature, setTemperature]=useState(null);
+    const [weatherData, setWeatherData]=useState({ready: false});
 
     function handleResponse(response){
-        setTemperature(response.data.temperature.current);
-        setReady(true);
+        setWeatherData({
+            ready: true,
+            temperature: response.data.temperature.current, 
+            wind:response.data.wind.speed, description:response.data.condition.description, 
+            humidity:response.data.temperature.humidity,
+            icon:response.data.condition.icon_url})
+            date: "Thursday 17.51";
 
     }
 
-    if (ready){
+    if (weatherData.ready){
         return(
             <div className="Weather">
                 <form>
@@ -28,26 +32,26 @@ export default function Weather(){
                 </form>
                 <h1> New York</h1>
                 <ul>
-                    <li> Thursday</li>
-                    <li>Sunny</li>
+                    <li> {weatherData.date}
+
+                    </li>
+                    <li className="text-capitalize">{weatherData.description}</li>
                 </ul>
                     <div className="row mt-3">
                         <div className="col-6">
                             <div className="clearfix">
-                            <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" alt="Sunny" className="float-left"/>
-                            <span className="temperature">{Math.round(temperature)}</span> <span className="unit">°C</span>
+                            <img src={weatherData.icon}alt={weatherData.description} className="float-left"/>
+                            <span className="temperature">{Math.round(weatherData.temperature)}</span> <span className="unit">°C</span>
     
                         </div></div>
                         <div className="col-6">
                             <ul>
+                               
                                 <li>
-                                    Precipitation:0%
+                                    Humidity: {weatherData.humidity}%
                                 </li>
                                 <li>
-                                    Humidity:44%
-                                </li>
-                                <li>
-                                    Wind:7 mph
+                                    Wind:{weatherData.wind} mph
                                 </li>
     
                             </ul>
