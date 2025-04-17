@@ -11,10 +11,9 @@ export default function Weather(){
             temperature: response.data.temperature.current, 
             wind:response.data.wind.speed, description:response.data.condition.description, 
             humidity:response.data.temperature.humidity,
-            icon:response.data.condition.icon_url})
-            date: "Thursday 17.51";
-
-    }
+            icon:response.data.condition.icon_url,
+            date: "Thursday 17.51"
+        })}
 
     if (weatherData.ready){
         return(
