@@ -1,10 +1,10 @@
 
 .Weather{
     font-family: Arial, Helvetica, sans-serif;
-border: 1px solid #dadde1;  
+    border: 1px solid #dadde1;  
 padding: 16px;
 margin: 30px auto;
-max-width: 600px;
+max-width: 680px;
 border-radius: 4px;
 color: #878787;  
 }
