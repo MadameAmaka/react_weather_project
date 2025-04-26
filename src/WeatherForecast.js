@@ -21,9 +21,10 @@ export default function WeatherForecast(props){
                 <div className="row">
                     <div className="col">
                         <div className="WeatherForecast-day">
-                            Sat
+                            {forecast[0].time}
                         </div>
-                        <img src={props.data.icon}alt={props.data.description} className="WeatherForecast-icon"/>
+                        <img src={forecast[0].condition.icon_url} alt={forecast[0].condition.description}/>
+
                         <div className="WeatherForecast-temperature"> 
                             <span className="WeatherForecast-temperature-max">{Math.round(forecast[0].temperature.maximum)}°</span>
                             <span className="WeatherForecast-temperature-min">{Math.round(forecast[0].temperature.minimum)}°°</span>
