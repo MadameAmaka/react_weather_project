@@ -28,6 +28,11 @@ margin: 20px 0 0 0;
     list-style: none;
 }
 
+.Weather li strong{
+    color: #f65282;
+    font-weight: 400;
+}
+
 .Weather img{
     height: 64px;
     width: 64px;

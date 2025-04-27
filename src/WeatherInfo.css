@@ -4,3 +4,9 @@
     line-height: 29px;
     margin: 20px 0 0 0;
     }
+
+    .Weather li strong{
+        color: #f65282;
+        font-weight: 400;
+    }
+    
