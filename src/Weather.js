@@ -56,6 +56,7 @@ export default function Weather(props){
                 </form>
                 <WeatherInfo data={weatherData}/>
                 <WeatherForecast data={weatherData}/>
+                <Footer/>
                 
                  </div>
         );
@@ -64,7 +65,4 @@ export default function Weather(props){
         search();
         return("Loading...");
     }
-
-    <Footer/>
-    
-}
+}  
