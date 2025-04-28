@@ -6,15 +6,3 @@
   max-width: 800px;
   margin: 60px auto;
 }
-
-.App footer{
-  color: #27214266;
-  font-size: 14px;
-  line-height: 18px;
-  margin-top: 40px;
-  text-align: center;
-}
-
-.App footer a {
-  color:  #056b3e;
-}

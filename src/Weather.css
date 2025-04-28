@@ -36,7 +36,7 @@ margin: 20px 0 10px;
 
 
 .Weather .btn {
-    background: #0d3a1a;
+    background: #164925;
     border: none;
     font-size: 16px;
     font-weight: 700;
@@ -88,3 +88,15 @@ margin: 20px 0 10px;
     line-height: 1;
     position: relative;
     top: -34px;}
+
+    .Weather footer{
+        color: #27214266;
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 40px;
+        text-align: center;
+      }
+      
+      .Weather footer a {
+        color:  #056b3e;
+      }
