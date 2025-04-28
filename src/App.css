@@ -1,9 +1,20 @@
+ body{
+  background: #e7f5ef;
+ }
+
 .App{
-  max-width: 680px;
-  margin: 30px auto;
+  max-width: 800px;
+  margin: 60px auto;
 }
 
-App footer{
-  font-size: 12px;
-  margin: 10px 0;
+.App footer{
+  color: #27214266;
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.App footer a {
+  color:  #056b3e;
 }
